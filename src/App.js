@@ -1,6 +1,5 @@
-
 import './App.css';
-import Recherche from "./Recherche";
+import Recherche from "./Composants/Recherche";
 
 function App() {
   return (
