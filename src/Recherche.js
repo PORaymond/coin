@@ -6,7 +6,7 @@ class Recherche extends Component {
    onChangeCurrency = (e, data) => {this.setState({coin:data.value})}
 
    render(){
-
+      console.log(this.state.coin, this.state.currency);
       const monnaieDepart = [
          { value: "firebot", key: "firebot", text:"FireBot"}
       ];
