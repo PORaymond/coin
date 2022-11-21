@@ -3,7 +3,7 @@ import Recherche from "./Composants/Recherche";
 import {Component} from "react";
 
 class App extends Component {
-state = {}
+state = {data: {}, error: ''}
    render() {
       return (
          <div className="App">
