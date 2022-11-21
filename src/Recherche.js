@@ -2,6 +2,9 @@ import { Component } from "react";
 import {Button, Select} from "semantic-ui-react";
 class Recherche extends Component {
    state = { coin: "", currency: ""}
+   onChangeCoin = (e, data) => {this.setState({coin:data.value})}
+   onChangeCurrency = (e, data) => {this.setState({coin:data.value})}
+
    render(){
 
       const monnaieDepart = [
