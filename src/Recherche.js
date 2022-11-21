@@ -1,5 +1,6 @@
 import { Component } from "react";
 import {Button, Select} from "semantic-ui-react";
+import './Recherche.css';
 class Recherche extends Component {
    state = { coin: "", currency: ""}
    onChangeCoin = (e, data) => {this.setState({coin:data.value})}
