@@ -1,30 +1,26 @@
-import {Button, Select} from "semantic-ui-react;"
 import { Component } from "react";
+import {Button, Select} from "semantic-ui-react";
 class Recherche extends Component {
    render(){
 
-      const optionsDpt = [
-         { value: "44", key: "44", text:"Loire Atlantique"},
-         { value: "49", key: "49", text:"Maine et Loire"},
-         { value: "53", key: "53", text:"Mayenne"},
-         { value: "72", key: "72", text:"Sarthe"},
-         { value: "85", key: "85", text:"Vendée"},
+      const monnaieDepart = [
+         { value: "firebot", key: "firebot", text:"FireBot"}
       ];
 
 
-      const optionsType = [
-         { value: "cpam", key:"cpam", text: "Caisse primaire d'assurance maladie"},
-         { value: "cci", key:"cci", text: "Chambre de commerce et d'industrie"},
-         { value: "crous", key:"crous", text: "Crous et ses antennes"}
+      const vsCurrency = [
+         { value: "hkd", key:"hkd", text: "Hong Kong Dollar"},
+         { value: "jpy", key:"jpy", text: "Japanese Yen"},
+         { value: "eth", key:"eth", text: "Ethereum"}
       ]
 
 
       return(
          <div className="recherche">
-            <Select placeholder="Choisissez un département" options={optionsDpt}  />
-            <Select placeholder="Choisissez une administration"  options={optionsType}  />
-            <Button primary> Lancer la recherche </Button>
-            <Button secondary> Vider la recherche </Button>
+            <Select placeholder="Choisissez une monnaie de départ" options={monnaieDepart}  />
+            <Select placeholder="Convertir en ?"  options={vsCurrency}  />
+            <Button primary> Convertir la monnaie </Button>
+            <Button secondary> Vider </Button>
 
          </div>
       )
